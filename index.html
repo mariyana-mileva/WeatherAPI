@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="video-container" id="videoContainer">
+        <video autoplay loop muted id="backgroundVideo">
+            <source src="clearSky.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container" id="container">
+        <div class="search-bar">
+            <input type="text" id="newCity" placeholder="Search for a city">
+            <button id="changeCityBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName">Weather in City</h2>
+            <p id="temperature">Temperature: 17.93°C</p>
+            <div class="weather-container">
+                <img id="weatherIcon" src="#" alt="Weather Icon">
+                <p id="weatherDescription">Clear Sky</p>
+            </div>
+            <div class="humidity-wind">
+                <p id="humidity">Humidity: 74%</p>
+                <p id="windSpeed">Wind speed: 1.54 km/h</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
